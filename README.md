@@ -29,7 +29,7 @@
 ## 📖 Descrição
 
 <p align="center">
-<img src="Imagens/Logo_InovaTech.jpeg" alt="InovaTech" width="250">
+<img src="Imagens/ChatGPT Image 19 de set. de 2025, 19_52_55.png" alt="InovaTech" width="250">
 </p>
 
 A **InovaTech** desenvolve um **dashboard interativo e inteligente** para a startup **Cannoli**, que atua no setor de foodtech e oferece uma plataforma de CRM, engajamento, cardápio digital e delivery próprio.
