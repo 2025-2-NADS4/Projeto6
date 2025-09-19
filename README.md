@@ -6,7 +6,7 @@
 
 ---
 
-# InovaTech
+# Projeto InovaTech — Dashboard Inteligente Cannoli
 
 ## 👨‍💻 Projeto 6
 
@@ -29,24 +29,24 @@
 ## 📖 Descrição
 
 <p align="center">
-<img src="Imagens/Logo FecaPay.jpeg" alt="FecaPay" width="250">
+<img src="Imagens/Logo_InovaTech.jpeg" alt="InovaTech" width="250">
 </p>
 
-A **InovaTech** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
+A **InovaTech** desenvolve um **dashboard interativo e inteligente** para a startup **Cannoli**, que atua no setor de foodtech e oferece uma plataforma de CRM, engajamento, cardápio digital e delivery próprio.
 
-O sistema foi desenvolvido para proporcionar uma **experiência rápida e otimizada**, eliminando filas e melhorando a eficiência das transações dentro do campus.
+O objetivo é fornecer uma ferramenta de **análise estratégica e operacional**, tanto para administradores da Cannoli quanto para clientes (restaurantes e negócios parceiros), permitindo acompanhar indicadores em tempo real, gerar insights com IA e otimizar a jornada do cliente.
 
 ---
 
 ## 🚀 Funcionalidades Principais
 
-- ✅ **Pagamento via QR Code:** escaneie e pague instantaneamente.  
-- ✅ **Saldo Digital Unificado:** utilize um único saldo para todos os estabelecimentos.  
-- ✅ **Histórico de Transações:** visualize compras, detalhes e recibos digitais.  
-- ✅ **Recarga de Saldo:** adicione dinheiro via **Pix, cartão de crédito/débito ou boleto**.  
-- ✅ **Transferência de Saldo:** envie saldo para amigos diretamente pelo app.  
-- ✅ **Cashback e Promoções:** obtenha recompensas e descontos exclusivos.  
-- ✅ **Banco de Dados Local:** SQLite para armazenamento seguro dos dados.  
+- ✅ **Autenticação de Usuários:** login diferenciado para administradores e clientes.  
+- ✅ **Visualização de KPIs:** métricas estratégicas e operacionais adaptadas a cada perfil.  
+- ✅ **Gráficos Interativos e Filtros:** análise por período, localidade, canal e métricas.  
+- ✅ **Alertas Inteligentes:** identificação de variações anômalas e comportamentos atípicos.  
+- ✅ **Exportação de Relatórios:** geração de arquivos em PDF, CSV e Excel.  
+- ✅ **Sugestões Automáticas:** insights baseados em padrões de comportamento detectados.  
+- ✅ **Simulação de Campanhas:** previsão de impactos em vendas e engajamento (módulo admin).  
 
 ---
 
@@ -65,7 +65,7 @@ O sistema foi desenvolvido para proporcionar uma **experiência rápida e otimiz
 |.gitignore<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém dois arquivos que devem ser alterados:
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
@@ -73,67 +73,52 @@ Há também 3 pastas que seguem da seguinte forma:
 
 <b>documentos</b>: Toda a documentação estará nesta pasta.
 
-<b>imagens</b>: Imagens do sistema
+<b>imagens</b>: Imagens do sistema.
 
 <b>src</b>: Pasta que contém o código fonte.
 
+---
+
 ## 🎨 Protótipo no Figma
 
-Confira o design e interações do **Fecapay** no **[Figma](https://www.figma.com/design/uScZbkNU86u2QLtwCOo2dG/app?node-id=23-3&t=oy9jqqHfqtgiXo8i-1)**.
+Confira o design e interações da **InovaTech** no **[Figma](https://www.figma.com/design/uScZbkNU86u2QLtwCOo2dG/app?node-id=23-3&t=oy9jqqHfqtgiXo8i-1)**.
 
 ---
 
 ## 🛠 Linguagens e Tecnologias Usadas
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" height="50" alt="Java"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="50" height="50" alt="Android"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="50" height="50" alt="SQLite"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" height="50" alt="React"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" height="50" alt="Python"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" height="50" alt="MySQL"/>
 </p>
 
-- **Frontend:** Android Studio (Java)  
-- **Backend:** SQLite (banco de dados local)  
-- **Autenticação:** Firebase Authentication (Google Sign-In e e-mail/senha)  
-- **Pagamentos:** Integração com API financeira para processar transações  
+- **Frontend:** React.js (responsividade e interatividade)  
+- **Backend:** Flask (Python) ou Node.js (Express)  
+- **Banco de Dados:** MySQL ou SQLite (simulação)  
+- **IA/Machine Learning:** scikit-learn, TensorFlow  
+- **Visualização de Dados:** Chart.js, Plotly  
+- **Hospedagem:** GitHub Pages (frontend) + Render/Heroku (backend)  
 
 ---
 
-## 📥 Instalação e Configuração
+## 📌 Estrutura do Aplicativo (Dashboard)
 
-### **1️⃣ Configurando o Ambiente de Desenvolvimento**
+- 📌 **Login & Cadastro:** autenticação de usuários (admin e cliente).  
+- 📌 **Dashboard Principal:** exibição de KPIs estratégicos.  
+- 📌 **Gráficos Interativos:** séries temporais, comparações, ranking de itens.  
+- 📌 **Painel de Alertas:** notificações automáticas de anomalias.  
+- 📌 **Simulação de Campanhas:** cálculo de impacto previsto.  
+- 📌 **Exportação de Relatórios:** PDF, CSV e Excel.  
 
-1. Baixe e instale o **[Android Studio](https://developer.android.com/studio)**.
-2. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-repositorio/fecapay.git
-   cd fecapay/src/frontend
-3. Abra o projeto no Android Studio e configure o emulador ou conecte um dispositivo físico.
-4. Compile e execute o aplicativo.
-
-### **2️⃣ Configurando o Banco de Dados SQLite**
-1. O SQLite já está embutido no projeto, sem necessidade de instalação adicional.
-2. Para visualizar e gerenciar o banco, utilize ferramentas como:
- - DB
- - SQLiteStudio
-
-
-## 📌 Estrutura do Aplicativo
-- 📌 Telas Principais
-- 📌 Login & Cadastro: Autenticação via e-mail/senha ou Google.
-- 📌 Dashboard: Exibe o saldo e atalhos para funcionalidades principais.
-- 📌 Pagamento via QR Code: Escaneie o código e confirme o pagamento.
-- 📌 Recarga de Saldo: Adicione saldo via Pix, cartão ou boleto.
-- 📌 Histórico de Transações: Consulte compras e baixe recibos digitais.
-- 📌 Promoções & Cashback: Veja ofertas e resgate recompensas.
-
+---
 
 ## 📋 Licença/License
 <a href="https://creativecommons.org">InovaTech</a> © 2025 by <a href="https://creativecommons.org"></a> trabalho licenciado <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
+---
+
 ## 🎓 Referências
 
-Aqui estão as referências usadas no projeto.
-
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-
+1. <https://github.com/iuricode/readme-template>  
+2. <https://github.com/gabrieldejesus/readme-model>  
