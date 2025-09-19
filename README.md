@@ -18,11 +18,11 @@
 - [Rafaela Coelho Bastos](https://www.linkedin.com/in/rafaela-coelho-bastos/)
 
 ### **Professores Orientadores:**  
-- [Jefferson de Oliveira Silva](https://www.linkedin.com/in/jefferson-o-silva/)
-- [Aimar Lopes](https://www.linkedin.com/in/aimarlopes/)  
-- [Vinicius Heltai Pacheco](https://www.linkedin.com/in/vheltai/)
-- [Francisco Escobar](https://www.linkedin.com/in/francisco-escobar/)
-- [Victor Bruno Alexander Rosetti de Quiroz](https://www.linkedin.com/in/victorbarq/)
+- [Aimar Lopes](https://www.linkedin.com/in/aimarlopes/) 
+- [Ronaldo Araujo Pinto](https://www.linkedin.com/in/ronaldo-araujo-pinto-3542811a/)
+- [Eduardo Savino Gomes](https://www.linkedin.com/in/eduardo-savino/)
+- [Edson Barbero](https://www.linkedin.com/in/edsonbarbero/)
+- [Lucy Mari Tabuti](https://www.linkedin.com/in/lucymari/)
 
 ---
 
@@ -32,7 +32,7 @@
 <img src="Imagens/Logo FecaPay.jpeg" alt="FecaPay" width="250">
 </p>
 
-O **Fecapay** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
+A **InovaTech** é um aplicativo mobile que permite que alunos e funcionários realizem pagamentos dentro do ambiente universitário de forma **prática e segura**. Com o **Fecapay**, compras na **cantina** são feitas sem dinheiro físico, utilizando **QR Code e saldo digital unificado**.
 
 O sistema foi desenvolvido para proporcionar uma **experiência rápida e otimizada**, eliminando filas e melhorando a eficiência das transações dentro do campus.
 
@@ -57,7 +57,6 @@ O sistema foi desenvolvido para proporcionar uma **experiência rápida e otimiz
 |-->Documentos<br>
   &emsp;|-->entrega 1<br>
   &emsp;|-->entrega 2<br>
-  &emsp;|-->entrega 3<br>
   &emsp;|-->entrega final <br>
 |-->imagens<br>
 |-->src<br>
