@@ -81,7 +81,7 @@ Há também 3 pastas que seguem da seguinte forma:
 
 ## 🎨 Protótipo no Figma
 
-Confira o design e interações da **InovaTech** no **[Figma](https://www.figma.com/design/uScZbkNU86u2QLtwCOo2dG/app?node-id=23-3&t=oy9jqqHfqtgiXo8i-1)**.
+Confira o design e interações da **InovaTech** no **[Figma](https://www.figma.com/design/TMvNBhacwlY7qAuNuWA7bc/Untitled?node-id=27-16&p=f)**.
 
 ---
 
