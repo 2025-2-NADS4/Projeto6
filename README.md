@@ -95,7 +95,7 @@ Confira o design e interações da **InovaTech** no **[Figma](https://www.figma.
 
 - **Frontend:** React.js (responsividade e interatividade)  
 - **Backend:** Flask (Python) ou Node.js (Express)  
-- **Banco de Dados:** MySQL ou SQLite (simulação)  
+- **Banco de Dados:** SQLite 
 - **IA/Machine Learning:** scikit-learn, TensorFlow  
 - **Visualização de Dados:** Chart.js, Plotly  
 - **Hospedagem:** GitHub Pages (frontend) + Render/Heroku (backend)  
