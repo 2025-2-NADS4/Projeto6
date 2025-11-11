@@ -1,0 +1,541 @@
+:root{
+  --bg:#FFF4EA;          /* fundo creme */
+  --surface:#FFFFFF;     /* cartões */
+  --text:#1F1F1F;
+  --muted:#6b6b6b;
+  --divider:#EAEAEA;
+
+  /* Paleta InovaTech (logo) */
+  --primary:#F7A51A;     /* laranja */
+  --primary-600:#F08F00;
+  --accent:#7B4DFF;      /* roxo */
+  --ring:0 0 0 3px rgba(123,77,255,.18);
+}
+
+*{ box-sizing:border-box; }
+html,body,#root{ height:100%; }
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family: Inter, system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* ---------- building blocks ---------- */
+.card{
+  background:var(--surface);
+  border:1px solid var(--divider);
+  border-radius:28px;
+  padding:28px 24px;
+  box-shadow:0 1px 0 #eee;
+}
+
+.input{
+  width:100%;
+  padding:12px 14px;
+  border:1px solid var(--divider);
+  border-radius:12px;
+  background:#fff; outline:none;
+}
+.input:focus{ border-color:var(--accent); box-shadow:var(--ring); }
+
+.btn-pill{
+  display:block; width:100%;
+  padding:12px 18px; border:none; cursor:pointer;
+  background:var(--primary); color:#111; font-weight:800;
+  border-radius:22px; letter-spacing:.3px;
+  box-shadow: inset 0 0 0 3px var(--accent);
+}
+.btn-pill:hover{ background:var(--primary-600); }
+.btn-secondary{ /* roxo cheio */
+  display:block; width:100%; padding:12px 18px; border:none; cursor:pointer;
+  background:var(--accent); color:#fff; font-weight:800; letter-spacing:.3px;
+  border-radius:22px;
+}
+.btn-secondary:hover{ filter:brightness(.95); }
+
+.btn-outline{
+  display:block; width:100%;
+  padding:12px 18px; border-radius:22px; cursor:pointer;
+  background:#fff; font-weight:800;
+  border:2px solid var(--divider);
+}
+.btn-outline:hover{ border-color:var(--accent); }
+
+.brand{ font-size:28px; font-weight:800; text-align:center; margin:6px 0 4px; }
+.brand .accent{ color:var(--accent); }
+.center{ text-align:center; }
+.subtitle{ text-align:center; opacity:.8; margin:10px 0 8px; }
+.divider{ height:1px; width:70%; margin:8px auto 18px; background:var(--divider); border-radius:999px; }
+/* ---------- Role Gate layout ---------- */
+.gate{
+  display:grid;
+  grid-template-columns: 1fr 460px;
+  min-height:100dvh;
+}
+.gate-hero{
+  background:url(/login-hero.png) center/cover no-repeat;
+  border-right:1px solid var(--divider);
+}
+.gate-right{ display:grid; place-items:center; padding:20px; }
+.brand{ font-size:28px; font-weight:800; text-align:center; margin:6px 0 10px; }
+.brand .accent{ color:var(--accent); }
+.subtitle{ text-align:center; opacity:.8; margin:10px 0 8px; }
+.divider{ height:1px; width:70%; margin:8px auto 18px; background:var(--divider); border-radius:999px; }
+
+/* ---------- Login layout ---------- */
+.login-wrap{
+  display:grid; grid-template-columns: 1fr 480px; min-height:100dvh;
+}
+.login-hero{
+  background:url(/login-hero.png) center/cover no-repeat;
+  border-right:1px solid var(--divider);
+}
+.login-right{ display:grid; place-items:center; padding:20px; }
+.login-title{ text-align:center; font-weight:800; margin:10px 0 4px; }
+.login-sub{ text-align:center; opacity:.7; }
+
+/* ---------- responsiveness ---------- */
+@media (max-width: 900px){
+  .gate{ grid-template-columns: 1fr; }
+  .gate-hero{ display:none; }
+  .login-wrap{ grid-template-columns: 1fr; }
+  .login-hero{ display:none; }
+  .card{ width:min(420px, 92vw); }
+}
+
+/* Botão roxo para "Crie sua conta" */
+.btn-secondary{
+  display:block; width:100%;
+  padding:12px 18px; border:none; cursor:pointer;
+  background: var(--accent); color:#fff; font-weight:800;
+  border-radius:22px; letter-spacing:.3px;
+}
+.btn-secondary:hover{ filter: brightness(.95); }
+
+/* ===== Dashboard layout ===== */
+.container {
+  max-width: 1200px;   /* limita a largura e centraliza */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.card-tight { padding: 10px; }
+
+.card-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.kpi-value {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.kpi-sub {
+  font-size: 12px;
+  opacity: .65;
+}
+
+/* área dos gráficos */
+.grid-charts {
+  display: grid;
+  grid-template-columns: 2fr 1.1fr;
+  gap: 16px;
+}
+
+.chart-box {
+  height: 360px;              /* altura fixa e elegante */
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.chart-wrap {
+  position: relative;
+  min-height: 0;
+  height: 100%;
+}
+
+/* listas */
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 16px;
+}
+
+/* atalhos admin */
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.quick-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* responsivo */
+@media (max-width: 1200px) {
+  .kpis { grid-template-columns: repeat(3, 1fr); }
+  .grid-charts { grid-template-columns: 1fr; }
+  .chart-box { height: 300px; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .quick-actions { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .chart-box { height: 260px; }
+}
+
+/* base */
+:root{
+  --bg:#fff7f0;           /* ou sua cor atual de fundo */
+  --surface:#ffffff;
+  --divider:rgba(0,0,0,.08);
+  --text:#1d1d1f;
+}
+
+/* cards e tipografia */
+.card{
+  background:var(--surface);
+  border:1px solid var(--divider);
+  border-radius:14px;
+  padding:14px;
+}
+
+/* áreas padrão do dashboard (se já usa, ótimo; senão, aproveite) */
+.kpis{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.kpi .value{ font-size:24px; font-weight:800; line-height:1.1; }
+.grid-charts{ display:grid; grid-template-columns:2fr 1.1fr; gap:16px; }
+.chart-box{ height:360px; display:grid; grid-template-rows:auto 1fr; }
+.chart-wrap{ position:relative; height:100%; min-height:0; }
+.grid-3{ display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:16px; }
+.quick-actions{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+
+/* responsivo */
+@media (max-width:1200px){
+  .kpis{ grid-template-columns:repeat(3,1fr); }
+  .grid-charts{ grid-template-columns:1fr; }
+  .chart-box{ height:300px; }
+  .grid-3{ grid-template-columns:1fr; }
+  .quick-actions{ grid-template-columns:1fr; }
+}
+@media (max-width:720px){
+  .kpis{ grid-template-columns:repeat(2,1fr); }
+  .chart-box{ height:260px; }
+}
+
+/* ----- GRID DO APP COM SIDEBAR ----- */
+.shell{
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+/* ----- SIDEBAR ----- */
+.sidebar{
+  background: #fff1e6;         /* bege suave do mock */
+  border-right: 1px solid #f0dcca;
+  padding: 18px 14px;
+  display:flex; flex-direction:column; gap:14px;
+}
+
+.sb-logo{
+  display:grid; place-items:center; padding: 4px 0 8px;
+}
+.sb-logo img{ width:110px; height:auto; }
+
+.sb-nav{ display:flex; flex-direction:column; gap:10px; }
+
+/* Botão do menu */
+.sb-btn{
+  display:grid; grid-template-columns: 26px 1fr 16px;
+  align-items:center; gap:10px;
+  padding: 12px 12px;
+  border: 1px solid #f2cda7;
+  border-radius: 12px;
+  background: #ff8a00;         /* laranja */
+  color:#fff; text-decoration:none; font-weight:700;
+  transition: transform .05s ease, background .15s ease;
+}
+.sb-btn:hover{ transform: translateY(-1px); filter: brightness(1.02); }
+.sb-btn--active{ box-shadow: 0 0 0 2px #fff inset, 0 0 0 3px #6b4eff inset; }
+
+.sb-ico{ font-size: 16px; display:grid; place-items:center; }
+.sb-txt{ font-size: 14px; }
+.sb-chevron{ opacity:.85; }
+
+/* Rodapé do sidebar */
+.sb-footer{
+  margin-top:auto; display:grid; gap:10px;
+}
+.sb-user{
+  display:grid; grid-template-columns: 36px 1fr; gap:8px; align-items:center;
+  padding: 8px; border:1px dashed #f2cda7; border-radius:12px;
+}
+.sb-avatar{
+  width:36px; height:36px; border-radius:999px; background:#ffb46a;
+  display:grid; place-items:center; font-weight:900; color:#5a3a00;
+}
+.sb-user-info small{ opacity:.7 }
+
+.sb-exit{
+  width:100%;
+  background:#fff; color:#222; font-weight:700;
+  border:1px solid #d6bfa8; border-radius:12px; padding:10px;
+}
+.sb-exit:hover{ background:#ffe9d3; }
+
+/* ----- CONTEÚDO ----- */
+.content{
+  padding: 18px 22px;
+}
+
+/* opcional: deixa os cards mais “cheios” quando o sidebar está ativo */
+.shell .card{ border-radius:14px; }
+
+/* Tiles coloridos (mock) */
+.hero-tiles{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 10px 0 8px;
+}
+.tile{
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+.tile .tile-sub{ font-size:12px; opacity:.9; letter-spacing:.3px }
+.tile .tile-value{ font-size:24px; font-weight:800; margin-top:6px }
+
+.tile-orange{ background: linear-gradient(180deg,#ff8a00,#ff6a00); }
+.tile-green{  background: linear-gradient(180deg,#1abc9c,#16a085); }
+.tile-purple{ background: linear-gradient(180deg,#a259ff,#7a27ff); }
+
+/* Mini tiles (ativos / inativos) */
+.mini-tiles{
+  background:#fdeffb;
+  border:1px solid var(--divider);
+  border-radius:14px;
+  display:grid;
+  grid-template-columns: 1fr 1px 1fr;
+  align-items:center;
+  padding:12px 16px;
+  margin-bottom:12px;
+}
+.mini-tile .mini-sub{ font-size:12px; opacity:.7 }
+.mini-tile .mini-value{ font-size:22px; font-weight:800; color:#2a2a2a }
+.mini-divider{ width:1px; height:28px; background:var(--divider); }
+
+/* Tabelinha mais clean */
+.table-simple{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:8px;
+  font-size:14px;
+}
+.table-simple thead th{
+  text-align:left;
+  font-weight:600;
+  padding:6px 0;
+  border-bottom:1px solid var(--divider);
+}
+.table-simple tbody td{
+  padding:8px 0;
+  border-bottom:1px solid var(--divider);
+}
+
+/* ---- KPI tiles estilo InovaTech ---- */
+.kpi {
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+}
+
+/* Tipografia */
+.kpi .kpi-sub {
+  font-size: 12px;
+  letter-spacing: .3px;
+  opacity: .9;
+}
+.kpi .kpi-value {
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+/* Coloridos */
+.kpi-orange {
+  color: #fff;
+  background: linear-gradient(180deg, #ff8a00, #ff6a00);
+}
+.kpi-green {
+  color: #fff;
+  background: linear-gradient(180deg, #1abc9c, #16a085);
+}
+.kpi-purple {
+  color: #fff;
+  background: linear-gradient(180deg, #a259ff, #7a27ff);
+}
+
+/* “Ghosts” (clientes ativos/inativos) */
+.kpi-ghost {
+  background: #fdf3ff;
+  border: 1px solid var(--divider, #ececec);
+}
+.kpi-ghost .kpi-sub   { color: #393939; opacity: .7; }
+.kpi-ghost .kpi-value { color: #2a2a2a; }
+
+/* ===== Layout geral (mantém o que você já tem) ===== */
+.shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: #fff7ef; /* bege clarinho do mock */
+}
+
+.content .container,
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 20px 32px;
+}
+
+/* ===== Cabeçalho (filtros + ações) ===== */
+.page-head { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom: 8px; }
+.page-title { font-size: 28px; font-weight: 800; margin-right:auto; }
+.head-actions .card.card-tight {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid #5b3df5;
+  color: #5b3df5;
+  font-weight: 700;
+}
+.btn-outline { border: 2px solid #e2e2e2; border-radius: 12px; padding: 8px 12px; }
+
+/* ===== Cards/KPIs no estilo da imagem ===== */
+.kpi { 
+  border-radius: 14px; 
+  padding: 14px 18px; 
+  box-shadow: 0 6px 14px rgba(0,0,0,.06); 
+  border: none; 
+}
+.kpi .kpi-sub { font-size: 12px; font-weight: 800; letter-spacing: .2px; opacity:.95; }
+.kpi .kpi-value { font-size: 26px; font-weight: 900; margin-top: 6px; }
+
+.kpi-orange { background: #ff7a00; color:#fff; }
+.kpi-green  { background: #0dbb7c; color:#fff; }
+.kpi-purple { background: #7a3cff; color:#fff; }
+
+.kpi-ghost { 
+  background: #f7ecff; 
+  border: 1px solid #ead9ff; 
+  color: #3a2a79; 
+}
+
+/* Grid padrão dos KPIs (cliente) e dos 4 cards (admin) */
+.kpis { display:grid; gap:12px; }
+@media (min-width: 860px){ .kpis{ grid-template-columns: repeat(5, 1fr); } }
+
+/* ===== Gráficos ===== */
+.chart-box { border-radius: 14px; overflow: hidden; }
+.chart-box .card-head { display:flex; align-items:center; gap:10px; }
+.chart-box .card-title { font-weight: 800; }
+.chart-wrap { height: 300px; } /* altura confortável */
+
+@media (min-width: 1200px){
+  .chart-wrap { height: 360px; }
+}
+
+/* ===== “Top 3 Restaurantes” (bloco verde) ===== */
+.admin-top3 {
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+.admin-top3 .card-head { padding: 12px 14px; }
+.admin-top3 .table {
+  margin: 0 12px 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.admin-top3 .table thead th {
+  background: #18c77f; /* verde mais vivo no topo */
+  color: #fff;
+  font-weight: 800;
+  padding: 10px 12px;
+}
+.admin-top3 .table tbody tr:nth-child(1) td { background:#e7fff4; }
+.admin-top3 .table tbody tr:nth-child(2) td { background:#f2fff8; }
+.admin-top3 .table tbody tr:nth-child(3) td { background:#f9fffb; }
+.admin-top3 .table td {
+  padding: 10px 12px;
+  border-top: 1px solid #e8f5ee;
+}
+
+/* ===== Botões roxos “Abrir” (atalhos admin) ===== */
+.quick-actions { display:grid; gap: 12px; grid-template-columns: 1fr 1fr; }
+.quick-card { display:flex; align-items:center; justify-content:space-between; gap:14px; }
+.btn-secondary {
+  background: #6c3bff;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-weight: 800;
+  box-shadow: 0 6px 14px rgba(108,59,255,.25);
+}
+.btn-secondary:hover { filter: brightness(1.05); }
+
+/* ===== Sidebar (já existente, só “polimento” pro mock) ===== */
+.sidebar {
+  background: linear-gradient(180deg, #ffe0bf 0%, #ffd3a6 100%);
+  border-right: 1px solid #ffd2a6;
+}
+.sidebar .sb-logo img { width: 92px; height: 92px; object-fit: contain; }
+.sb-btn { 
+  display: grid; grid-template-columns: 28px 1fr 18px; 
+  align-items: center; gap: 8px;
+  padding: 12px 14px; border-radius: 12px; 
+  background: #ff8e24; color:#fff; font-weight: 800;
+  box-shadow: 0 6px 14px rgba(255,141,36,.25);
+}
+.sb-btn + .sb-btn { margin-top: 10px; }
+.sb-btn--active { background: #ff6e00; }
+.sb-ico { font-size: 16px; }
+.sb-chevron { opacity: .7; }
+
+/* ===== Inputs e selects com cantos arredondados (mock) ===== */
+.input {
+  border-radius: 12px !important;
+  border: 1px solid #e7e2dc !important;
+  background: #fff !important;
+  padding: 8px 10px !important;
+}
+
+/* ===== Tabelas & cards ===== */
+.card { border: 1px solid #f0e5d9; border-radius: 14px; background: #fff; }
+.table th, .table td { padding: 10px 12px; }
+.muted { opacity: .7; }
