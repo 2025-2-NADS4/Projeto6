@@ -36,17 +36,25 @@ A **InovaTech** desenvolve um **dashboard interativo e inteligente** para a star
 
 O objetivo é fornecer uma ferramenta de **análise estratégica e operacional**, tanto para administradores da Cannoli quanto para clientes (restaurantes e negócios parceiros), permitindo acompanhar indicadores em tempo real, gerar insights com IA e otimizar a jornada do cliente.
 
+O projeto foi totalmente implementado com **backend próprio hospedado na Render** e **frontend responsivo hospedado na Vercel**, com integração via API e ambiente profissional.
+
+### 🔗 Links da Aplicação:
+- **Frontend (Vercel):** https://facul-projeto-six.vercel.app  
+- **Backend (Render):** https://inovatech-backend.onrender.com  
+
 ---
 
 ## 🚀 Funcionalidades Principais
 
-- ✅ **Autenticação de Usuários:** login diferenciado para administradores e clientes.  
-- ✅ **Visualização de KPIs:** métricas estratégicas e operacionais adaptadas a cada perfil.  
-- ✅ **Gráficos Interativos e Filtros:** análise por período, localidade, canal e métricas.  
-- ✅ **Alertas Inteligentes:** identificação de variações anômalas e comportamentos atípicos.  
-- ✅ **Exportação de Relatórios:** geração de arquivos em PDF, CSV e Excel.  
-- ✅ **Sugestões Automáticas:** insights baseados em padrões de comportamento detectados.  
-- ✅ **Simulação de Campanhas:** previsão de impactos em vendas e engajamento (módulo admin).  
+- ✅ **Autenticação de Usuários:** login separado para admin e cliente.  
+- ✅ **Visualização de KPIs:** consumo, vendas, ticket médio, churn, campanhas e mais.  
+- ✅ **Gráficos Interativos e Filtros:** período, canal, loja e métricas.  
+- ✅ **Alertas Inteligentes:** detecção automática de anomalias.  
+- ✅ **Sugestões Automáticas com IA:** insights de otimização baseados nos dados.  
+- ✅ **Exportação de Relatórios:** PDF, CSV e Excel.  
+- ✅ **Simulação de Campanhas:** previsão de impacto estimado (módulo admin).  
+- ✅ **Dashboard Admin Completo:** visão geral de restaurantes, ranking e KPIs gerais.  
+- ✅ **Integração com Backend Real:** APIs Flask hospedadas e acessadas dinamicamente.  
 
 ---
 
@@ -67,21 +75,23 @@ O objetivo é fornecer uma ferramenta de **análise estratégica e operacional**
 
 A pasta raiz contém dois arquivos que devem ser alterados:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto.  
 
-Há também 3 pastas que seguem da seguinte forma:
+<b>documentos</b>: Pasta com todas as entregas solicitadas na disciplina.  
 
-<b>documentos</b>: Toda a documentação estará nesta pasta.
+<b>imagens</b>: Prints e imagens do projeto.  
 
-<b>imagens</b>: Imagens do sistema.
+<b>src</b>: Contém todo o código do sistema, dividido em:
 
-<b>src</b>: Pasta que contém o código fonte.
+- **Backend:** Flask + SQLite + JWT, hospedado na Render  
+- **Frontend:** React + Vite, hospedado na Vercel  
 
 ---
 
 ## 🎨 Protótipo no Figma
 
-Confira o design e interações da **InovaTech** no **[Figma](https://www.figma.com/design/TMvNBhacwlY7qAuNuWA7bc/Untitled?node-id=27-16&p=f)**.
+Confira o design e interações da **InovaTech** no  
+👉 **[Figma](https://www.figma.com/design/gYkYdXLLX3oQbFMWBO6z7w/Untitled?node-id=0-1&p=f&t=rqTsD4xgTjr1SmBP-0)**
 
 ---
 
@@ -90,35 +100,47 @@ Confira o design e interações da **InovaTech** no **[Figma](https://www.figma.
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" height="50" alt="React"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" height="50" alt="Python"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" height="50" alt="MySQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="50" height="50" alt="MySQL"/>
 </p>
 
-- **Frontend:** React.js (responsividade e interatividade)  
-- **Backend:** Flask (Python) ou Node.js (Express)  
-- **Banco de Dados:** SQLite 
-- **IA/Machine Learning:** scikit-learn, TensorFlow  
-- **Visualização de Dados:** Chart.js, Plotly  
-- **Hospedagem:** GitHub Pages (frontend) + Render/Heroku (backend)  
+- **Frontend:** React.js + Vite  
+- **Backend:** Flask (Python)  
+- **Banco de Dados:** SQLite  
+- **Bibliotecas de IA:** NumPy  
+- **Visualização:** Chart.js  
+- **Autenticação:** JWT  
+- **Hospedagem:**  
+  - Backend → Render  
+  - Frontend → Vercel  
 
 ---
 
 ## 📌 Estrutura do Aplicativo (Dashboard)
 
-- 📌 **Login & Cadastro:** autenticação de usuários (admin e cliente).  
-- 📌 **Dashboard Principal:** exibição de KPIs estratégicos.  
-- 📌 **Gráficos Interativos:** séries temporais, comparações, ranking de itens.  
-- 📌 **Painel de Alertas:** notificações automáticas de anomalias.  
-- 📌 **Simulação de Campanhas:** cálculo de impacto previsto.  
-- 📌 **Exportação de Relatórios:** PDF, CSV e Excel.  
+- 📌 **Login & Cadastro:** segurança e fluxo separado por perfil.  
+- 📌 **Dashboard Principal:** KPIs atualizados dinamicamente.  
+- 📌 **Gráficos Interativos:** vendas por semana, resumo por canal, evolução temporal.  
+- 📌 **Painel de Alertas:** detecção automática de picos fora do padrão.  
+- 📌 **Sugestões Inteligentes:** baseadas em modelos estatísticos.  
+- 📌 **Top Itens:** ranking dos produtos mais vendidos.  
+- 📌 **Simulador de Campanhas (Admin):** previsão de resultados.  
+- 📌 **Exportação de Dados:** PDF, Excel e CSV.  
+- 📌 **Admin Dashboard:**  
+  - visão geral dos restaurantes,  
+  - ranking dos top 3,  
+  - gráficos avançados,  
+  - filtros especiais.  
 
 ---
 
 ## 📋 Licença/License
-<a href="https://creativecommons.org">InovaTech</a> © 2025 by <a href="https://creativecommons.org"></a> trabalho licenciado <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left:.2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<a href="https://creativecommons.org">InovaTech</a> © 2025 — licenciado sob <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>  
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;margin-left:.2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;margin-left:.2em;">
 
 ---
 
 ## 🎓 Referências
 
-1. <https://github.com/iuricode/readme-template>  
-2. <https://github.com/gabrieldejesus/readme-model>  
+1. https://github.com/iuricode/readme-template  
+2. https://github.com/gabrieldejesus/readme-model  
